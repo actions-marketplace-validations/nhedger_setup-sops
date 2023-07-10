@@ -11,8 +11,8 @@ dependencies:
     specifier: ^2.0.3
     version: 2.0.3
   '@octokit/request-error':
-    specifier: ^3.0.3
-    version: 3.0.3
+    specifier: ^5.0.0
+    version: 5.0.0
   '@octokit/rest':
     specifier: ^19.0.7
     version: 19.0.7
@@ -594,6 +594,10 @@ packages:
   /@octokit/openapi-types@17.1.0:
     resolution: {integrity: sha512-rnI26BAITDZTo5vqFOmA7oX4xRd18rO+gcK4MiTpJmsRMxAw0JmevNjPsjpry1bb9SVNo56P/0kbiyXXa4QluA==}
 
+  /@octokit/openapi-types@18.0.0:
+    resolution: {integrity: sha512-V8GImKs3TeQRxRtXFpG2wl19V7444NIOTDF24AWuIbmNaNYOQMWRbjcGDXV5B+0n887fgDcuMNOmlul+k+oJtw==}
+    dev: false
+
   /@octokit/plugin-paginate-rest@6.0.0(@octokit/core@4.2.0):
     resolution: {integrity: sha512-Sq5VU1PfT6/JyuXPyt04KZNVsFOSBaYOAq2QRZUwzVlI10KFvcbUo8lR258AAQL1Et60b0WuVik+zOWKLuDZxw==}
     engines: {node: '>= 14'}
@@ -632,6 +636,15 @@ packages:
       once: 1.4.0
     dev: false
 
+  /@octokit/request-error@5.0.0:
+    resolution: {integrity: sha512-1ue0DH0Lif5iEqT52+Rf/hf0RmGO9NWFjrzmrkArpG9trFfDM/efx00BJHdLGuro4BR/gECxCU2Twf5OKrRFsQ==}
+    engines: {node: '>= 18'}
+    dependencies:
+      '@octokit/types': 11.0.0
+      deprecation: 2.3.1
+      once: 1.4.0
+    dev: false
+
   /@octokit/request@6.2.3:
     resolution: {integrity: sha512-TNAodj5yNzrrZ/VxP+H5HiYaZep0H3GU0O7PaF+fhDrt8FPrnkei9Aal/txsN/1P7V3CPiThG0tIvpPDYUsyAA==}
     engines: {node: '>= 14'}
@@ -656,6 +669,12 @@ packages:
       '@octokit/plugin-rest-endpoint-methods': 7.0.1(@octokit/core@4.2.0)
     transitivePeerDependencies:
       - encoding
+    dev: false
+
+  /@octokit/types@11.0.0:
+    resolution: {integrity: sha512-h4iyfMpQUdub1itwTn6y7z2a3EtPuer1paKfsIbZErv0LBbZYGq6haiPUPJys/LetPqgcX3ft33O16XuS03Anw==}
+    dependencies:
+      '@octokit/openapi-types': 18.0.0
     dev: false
 
   /@octokit/types@9.2.0:
